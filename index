@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>POETIC-EXILE</title>
+    <link rel="shortcut icon" href="">
+    <link rel="alternate" type="application/rss+xml" href="{RSS}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/style.css" rel="stylesheet" type="text/css">
+    <meta name="author" content="Poetic Exile" />
+    <meta name="description" content="The website of Poetic-Exile." />
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(function () {
+                $('body').removeClass('load-in');
+            });
+        });
+    </script>
+</head>
+
+<body class="load-in">
+
+    <!-- START NAVIGATION -->
+    <header id="mobile-header">
+        <div id="mobile-flex">
+            <div id="mobile-left">
+                <div class="menu-button" title="open menu"><img src="SVGs/OpenMenu.svg"></div>
+            </div>
+        </div>
+    </header>
+
+    <aside id="sidebar">
+        <div id="side-content">
+            <nav id="icon-sidebar">
+                <div class="close"><a title="close menu"><img src="SVGs/CloseMenu.svg"></a></div>
+                <button class="tablinks" id="defaultOpen" onclick="openPage(event, 'lore')" title="Lore"
+                    style="margin-top: 20px;"><img src="/SVGs/Lore/Icon.svg"></button>
+                <button class="tablinks" onclick="openPage(event, 'characters')" title="Characters"><img
+                        src="/SVGs/Characters/Icon.svg"></button>
+                <button class="tablinks" onclick="openPage(event, 'locations')" title="Locations"><img
+                        src="/SVGs/Locations/Icon.svg"></button>
+                <button class="tablinks" onclick="openPage(event, 'geography')" title="Geography"><img
+                        src="/SVGs/Geography/Icon.svg"></button>
+                <button class="tablinks" onclick="openPage(event, 'species')" title="Species"><img
+                        src="/SVGs/Species/Icon.svg"></button>
+                <button class="tablinks" onclick="openPage(event, 'florafauna')" title="Flora & Fauna"><img
+                        src="/SVGs/FloraFauna/Icon.svg"></button>
+                <button class="tablinks" onclick="openPage(event, 'cultures')" title="Cultures"><img
+                        src="/SVGs/Cultures/Icon.svg"></button>
+                <button class="tablinks" onclick="openPage(event, 'factionspolitics')" title="Factions & Politics"><img
+                        src="/SVGs/FactionsPolitics/Icon.svg"></button>
+                <button class="tablinks" onclick="openPage(event, 'faiths')" title="Faiths"><img
+                        src="/SVGs/Faiths/Icon.svg"></button>
+                <button class="tablinks" onclick="openPage(event, 'technologysciences')"
+                    title="Technology & Sciences"><img src="/SVGs/TechnologySciences/Icon.svg"></button>
+                <button class="tablinks" onclick="openPage(event, 'items')" title="Items"><img
+                        src="/SVGs/Items/Icon.svg"></button>
+                <button class="tablinks" onclick="openPage(event, 'economy')" title="Economy"
+                    style="margin-bottom: 0px;"><img src="/SVGs/Economy/Icon.svg"></button>
+            </nav>
+
+
+
+            <nav id="side-bar" class="side-bar">
+                <div id="lore" class="tabcontent"> <!-- #lore div wraps around everything -->
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#">Services</a>
+                            <div class="dropdown-content">
+                                <ul>
+                                    <li><a href="#">Web Design</a></li>
+                                    <li><a href="#">Graphic Design</a></li>
+                                    <li class="dropdown">
+                                        <a href="#">Marketing</a>
+                                        <div class="dropdown-content">
+                                            <ul>
+                                                <li><a href="#">SEO</a></li>
+                                                <li><a href="#">Social Media</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+        </div>
+
+        </div>
+    </aside>
+    <!-- END NAVIGATION -->
+
+    <article>
+        <h1>Poetic-Exile</h1>
+        <p>Welcome to [POETIC-EXILE]. The domain/website name is not a reflection of this world. I think of it more like
+            a permanent placeholder. The responsiveness may be slightly dysfunctional, but it should not cause any
+            significant issues. If otherwise, please do contact me with a detailed description of the problem.</p>
+        <p>[POETIC-EXILE] serves as my digital archive of a D&D world I never completely finished. It has been an
+            ongoing
+            project of mine for the past three years. I do not see myself ever completing this project, for the reason
+            being
+            that worldbuilding never has a true end.</p>
+    </article>
+
+    <article>
+        <h1>Navigating Poetic-Exile</h1>
+        <p>All of the navigation you require to roam this archive is included in the sidebar to the left. If you cannot
+            view it, click the menu button in the top-left. You may switch categories upon interacting with the icon
+            buttons. Each icon leads to a new category, which include more sub-categories, and the list goes on. Entry
+            pages may also include pop-up modal links, external links, and hidden links within the website that are not
+            listed in the navigation sidebar.</p>
+        <p>To get the most out of your stay here, I suggest you briefly scan the entries in the LORE/Lore Notes category
+            for context. The [READ ME] entry may provide insight into the information you will absorb here.</p>
+    </article>
+
+    <article>
+        <h1>Functionality</h1>
+        <p>This website is hosted by Github Pages. Due to the limited options as a static website, you may expect a
+            majority of the pages to load slowly and possibly crash due to the abundance of code and heavy reliance on
+            JS & CSS performance. I urge that you do not spam-click links or swipe through pages too quickly to ensure
+            the page does not crash. </p>
+        <p>To get the most out of your stay here, I suggest you briefly scan the entries in the LORE/Lore Notes category
+            for context. The [READ ME] Entry may provide insight into the information you will absorb here.</p>
+    </article>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.menu-button').click(function () {
+                $('#sidebar').addClass('show');
+            });
+            $('.close').click(function () {
+                $('#sidebar').removeClass('show');
+            });
+            $('#btop').click(function () {
+                $('html, body').animate({ scrollTop: 0 }, 800);
+                return false;
+            });
+        });
+    </script>
+    <script>
+        // Add click event to toggle dropdown visibility
+document.querySelectorAll('.dropdown').forEach(dropdown => {
+    dropdown.addEventListener('click', function(e) {
+        const dropdownContent = this.querySelector('.dropdown-content');
+        // Toggle visibility of dropdown content
+        dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+        // Prevent event from propagating to document
+        e.stopPropagation();
+    });
+});
+
+// Close dropdown if clicked outside
+document.addEventListener('click', function(e) {
+    // Close all dropdowns when clicking outside
+    document.querySelectorAll('.dropdown-content').forEach(content => {
+        if (!content.contains(e.target)) {
+            content.style.display = 'none';
+        }
+    });
+});
+
+    </script>
+    <script>
+        function openPage(evt, pageName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(pageName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
+
+</html>
